@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainhome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verdeClaro">
+
+  <LinearLayout
+      android:id="@+id/main"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:padding="20dp"
+      tools:context=".MainHome">
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Faça sua aposta"
+        android:textAlignment="center"
+        android:textColor="#FDFDFD"
+        android:textSize="22sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Titulo">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/input_titulo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:inputType="text"
+          android:textColorLink="#232323"
+          tools:ignore="DuplicateIds" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Descricao">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/input_decricao"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="text"
+          android:textColorLink="#232323"
+          tools:ignore="DuplicateIds" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Valor">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/input_valor"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="text"
+          android:textColorLink="#232323"
+          tools:ignore="DuplicateIds" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <RadioButton
+          android:id="@+id/radioButtonPix"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="2dp"
+          android:text="Pix"
+          android:textColor="#FFFFFF" />
+
+      <RadioButton
+          android:id="@+id/radioButtonCredit"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="2dp"
+          android:text="Cartão de Crédito"
+          android:textColor="#FFFFFF" />
+
+      <RadioButton
+          android:id="@+id/radioButtonDebito"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="2dp"
+          android:text="Cartão de Débito"
+          android:textColor="#FDFDFD" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_cadastrar_aposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/dourado"
+        android:text="Apostar"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#007ED3" />
+
+    <Button
+        android:id="@+id/button_listar_aposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/dourado"
+        android:text="Listar Apostas"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#007ED3" />
+
+  </LinearLayout>
+</LinearLayout>
